@@ -1,0 +1,47 @@
+{
+  "name": "react-activity-heading",
+  "version": "0.1.0",
+  "description": "Reflect activity state in your headings",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "react-component",
+    "activity",
+    "heading",
+    "title",
+    "status",
+    "loader"
+  ],
+  "author": "Robert Gonzales",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^4.7.4",
+    "babel-loader": "^4.1.0",
+    "cjsx-loader": "~2.0.1",
+    "coffee-loader": "~0.7.2",
+    "coffee-script": "~1.9.1",
+    "css-loader": "~0.15.1",
+    "expose-loader": "~0.6.0",
+    "file-loader": "^0.8.4",
+    "json-loader": "~0.5.1",
+    "object-assign": "~2.0.0",
+    "react-hot-loader": "^1.2.8",
+    "style-loader": "~0.12.3",
+    "svgo": "^0.5.3",
+    "svgo-loader": "^1.1.0",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.10.5",
+    "webpack-dev-middleware": "~1.2.0",
+    "webpack-dev-server": "~1.10.1",
+    "run-sequence": "~1.1.2"
+  },
+  "dependencies": {
+    "lodash": "^4.5.1",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "velocity-react": "^1.1.3"
+  }
+}
