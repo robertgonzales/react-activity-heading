@@ -2,7 +2,7 @@ react-activity-heading
 ======================
 `<ActivityHeading />` lets you push activity state to a heading area, temporary replacing the text with a status message. Under the hood it throttles the rate at which new props are converted to state so that fast update changes are displayed and the animations always look good. 
 
-You can also to hot-update the status message just before it animates out. This is useful for displaying success/error state.
+You also have the ability to update the status message just before it animates out. This is useful for displaying success/error messages.
 
 ![activity-heading-gif](https://cloud.githubusercontent.com/assets/7729885/13375753/0f30a63e-dd76-11e5-9551-9fdc44cf06a6.gif)
 
