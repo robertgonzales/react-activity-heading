@@ -1,10 +1,19 @@
 react-activity-heading
 ======================
-`<ActivityHeading />` lets you push activity state to a heading area, temporary replacing the text with a status message. Under the hood it throttles the rate at which new props are converted to state so that fast update changes are displayed and the animations always look good. 
+`react-activity-heading` lets you push activity state to a heading area, temporarily replacing the text with a status message.
 
 You also have the ability to update the status message just before it animates out. This is useful for displaying success/error messages.
 
+Under the hood it throttles the rate at which new status props are accepted so that quick changes have a chance to display and the animations always look good. 
+
 ![activity-heading-gif](https://cloud.githubusercontent.com/assets/7729885/13375753/0f30a63e-dd76-11e5-9551-9fdc44cf06a6.gif)
+
+## Installation
+```
+npm install react-activity-heading --save
+```
+
+This package depends on [velocity-react](https://github.com/twitter-fabric/velocity-react) for animation and [lodash](https://lodash.com/) for some utility functions.
 
 ## Usage
 
