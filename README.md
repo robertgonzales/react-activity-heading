@@ -4,6 +4,8 @@ react-activity-heading
 
 You can also to hot-update the status message just before it animates out. This is useful for displaying success/error state.
 
+![activity-heading-gif](https://cloud.githubusercontent.com/assets/7729885/13375753/0f30a63e-dd76-11e5-9551-9fdc44cf06a6.gif)
+
 ## Usage
 
 Example usage of `<ActivityHeading />`:
