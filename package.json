@@ -1,12 +1,15 @@
 {
   "name": "react-activity-heading",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Reflect activity state in your headings",
-  "url": "https://github.com/robertgonzales/react-activity-heading",
   "main": "dist/ActivityHeading.js",
   "scripts": {
     "start": "node server.js",
     "prepublish": "cjsx -o dist/ -c src/ActivityHeading.cjsx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/robertgonzales/react-activity-heading"
   },
   "keywords": [
     "react",
