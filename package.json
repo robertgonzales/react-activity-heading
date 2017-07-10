@@ -1,6 +1,6 @@
 {
   "name": "react-activity-heading",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reflect activity state in your headings",
   "main": "dist/ActivityHeading.js",
   "scripts": {
@@ -44,10 +44,12 @@
     "webpack-dev-middleware": "~1.2.0",
     "webpack-dev-server": "~1.10.1"
   },
+  "peerDependencies": {
+    "react": "^15",
+    "react-dom": "^15"
+  },
   "dependencies": {
     "lodash": "^4.5.1",
-    "react": "^0.14.7",
-    "react-dom": "^0.14.7",
     "velocity-react": "^1.1.3"
   }
 }

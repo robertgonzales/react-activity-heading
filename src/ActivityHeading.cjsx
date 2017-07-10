@@ -1,13 +1,13 @@
 require("velocity-animate")
 require("velocity-animate/velocity.ui")
 React = require("react")
-{ Component, PropTypes } = React
+PropTypes = require("prop-types")
 { VelocityTransitionGroup } = require("velocity-react")
 { debounce, throttle } = require("lodash/function")
 { merge } = require("lodash/object")
 
 
-class ActivityHeading extends Component
+class ActivityHeading extends React.Component
 
   constructor: (props)->
     super(props)
@@ -44,7 +44,7 @@ class ActivityHeading extends Component
       animation: "transition.slideDownIn"
       duration: @props.speed
 
-    leaveAnimation = 
+    leaveAnimation =
       animation: "transition.slideDownOut"
       duration: @props.speed * 0.75
 
@@ -65,17 +65,17 @@ class ActivityHeading extends Component
 
     <VelocityTransitionGroup
       className={@props.className}
-      enter={enterAnimation} 
+      enter={enterAnimation}
       leave={leaveAnimation}
       style={styles.wrapper}>
-       { 
+       {
         if @state.status
           # keys prevent re-animation on updates
           # TODO: use and expose h[1-6] tag prop?
           <span style={styles.heading} key="status">{@state.status}</span>
         else
           <span style={styles.heading} key="title">{@props.title}</span>
-      }     
+      }
     </VelocityTransitionGroup>
 
 
@@ -103,7 +103,7 @@ ActivityHeading.propTypes =
     wrapper: PropTypes.object
     heading: PropTypes.object
 
-ActivityHeading.defaultProps = 
+ActivityHeading.defaultProps =
   activityStatus: "Loading..."
   completeStatus: "Done"
   showCompleteStatus: yes
